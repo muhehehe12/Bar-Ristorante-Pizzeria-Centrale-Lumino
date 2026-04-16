@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bar-Ristorante-Pizzeria Centrale Lumino – Authentic Italian pizza, pasta &amp; Mediterranean cuisine in Lumino, Switzerland. Wood-fired pizzas, fresh ingredients, takeaway &amp; outdoor seating. Call +41 91 829 22 94 or WhatsApp NOW!">
+    <meta name="keywords" content="ristorante lumino, pizzeria lumino, pizza lumino, italian restaurant lumino, centrale lumino, bar lumino, takeaway lumino, outdoor seating lumino">
+    <title>Italian Restaurant Lumino | Pizza &amp; Pasta Centrale</title>
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Italian Restaurant Lumino | Pizza &amp; Pasta Centrale">
+    <meta property="og:description" content="Authentic Italian Pizza &amp; Pasta in Lumino. Call Now • Reserve • WhatsApp Order">
+    <meta property="og:image" content="https://picsum.photos/id/292/1200/630">
+    <meta property="og:url" content="https://centralelumino.ch">
+    <meta property="og:type" content="restaurant">
+    <meta property="og:site_name" content="Centrale Lumino">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Italian Restaurant Lumino | Pizza &amp; Pasta Centrale">
+    <meta name="twitter:description" content="Wood-fired pizza, fresh pasta &amp; Mediterranean flavors. Call +41 91 829 22 94 or WhatsApp now!">
+    <meta name="twitter:image" content="https://picsum.photos/id/292/1200/630">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='50%' x='50%' font-size='70' text-anchor='middle' dominant-baseline='middle'%3E🍕%3C/text%3E%3C/svg%3E">
+    
+    <!-- Structured Data - Restaurant Schema (REAL DATA) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Bar-Ristorante-Pizzeria Centrale Lumino",
+      "image": "https://picsum.photos/id/292/1200/630",
+      "url": "https://centralelumino.ch",
+      "telephone": "+41 91 829 22 94",
+      "priceRange": "€€",
+      "description": "Authentic Italian pizzeria with wood-fired pizzas, fresh pasta, seafood and Mediterranean cuisine in Lumino, Switzerland.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via Giovannaccio 11",
+        "addressLocality": "Lumino",
+        "addressRegion": "Ticino",
+        "postalCode": "6533",
+        "addressCountry": "CH"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 46.2311257,
+        "longitude": 9.0653522
+      },
+      "cuisine": ["Italian", "Mediterranean", "Pizza", "Seafood"],
+      "servesCuisine": ["Italian", "Mediterranean", "Pizza", "Seafood"],
+      "hasMap": "https://www.google.com/maps/place/Bar-Ristorante-Pizzeria+Centrale+Lumino/",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "09:00",
+          "closes": "23:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.2",
+        "reviewCount": "49"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- NAV -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🍕</span>
+                Centrale Lumino
+            </div>
+            
+            <div class="nav-links">
+                <a href="#menu" onclick="smoothScrollTo('menu')">Menu</a>
+                <a href="#gallery" onclick="smoothScrollTo('gallery')">Gallery</a>
+                <a href="#reviews" onclick="smoothScrollTo('reviews')">Reviews</a>
+                <a href="#location" onclick="smoothScrollTo('location')">Location</a>
+            </div>
+            
+            <!-- Desktop CTAs -->
+            <div class="desktop-ctas">
+                <a href="tel:+41918292294" class="cta-btn small-btn call-btn">
+                    📞 Call Now
+                </a>
+                <button onclick="openReservationModal()" class="cta-btn small-btn reserve-btn">
+                    📅 Reserve
+                </button>
+                <a href="https://wa.me/41918292294?text=Hi%20Centrale%20Lumino%2C%20I%27d%20like%20to%20order%20or%20reserve%20a%20table%21" 
+                   target="_blank" class="cta-btn small-btn whatsapp-btn">
+                    💬 WhatsApp
+                </a>
+            </div>
+            
+            <!-- Language Toggle -->
+            <div class="language-toggle">
+                <button onclick="switchLanguage('en')" id="lang-en" class="lang-btn active">EN</button>
+                <button onclick="switchLanguage('it')" id="lang-it" class="lang-btn">IT</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+        <div class="hero-bg" id="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <div class="badge">
+                <span class="star">★</span> 4.2 on Google • Open now
+            </div>
+            
+            <h1 id="hero-title" class="hero-title">Authentic Italian Pizza &amp; Pasta in Lumino</h1>
+            <p id="hero-subtitle" class="hero-subtitle">Wood-fired pizzas • Fresh ingredients • Traditional Italian experience</p>
+            
+            <div class="hero-ctas">
+                <a href="tel:+41918292294" class="cta-btn hero-btn call-btn pulse">
+                    📞 CALL NOW<br>
+                    <span class="phone-number">+41 91 829 22 94</span>
+                </a>
+                
+                <button onclick="openReservationModal()" class="cta-btn hero-btn reserve-btn">
+                    📅 RESERVE TABLE
+                </button>
+                
+                <a href="https://wa.me/41918292294?text=Hi%20Centrale%20Lumino%2C%20I%27d%20like%20to%20order%20takeaway%20or%20reserve%20a%20table%21" 
+                   target="_blank" class="cta-btn hero-btn whatsapp-btn">
+                    💬 WHATSAPP ORDER
+                </a>
+            </div>
+            
+            <div class="trust-bar">
+                <div class="trust-item">✅ Takeaway</div>
+                <div class="trust-item">✅ Outdoor seating</div>
+                <div class="trust-item">✅ Reservations</div>
+                <div class="trust-item">✅ Bar + Restaurant</div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="scroll-hint" onclick="smoothScrollTo('about')">
+            <span>Scroll for more deliciousness ↓</span>
+        </div>
+    </section>
+
+    <!-- STICKY MOBILE CTA BAR -->
+    <div class="mobile-sticky-bar">
+        <a href="tel:+41918292294" class="mobile-cta">
+            📞 Call
+        </a>
+        <a href="https://wa.me/41918292294?text=Hi%20Centrale%20Lumino%2C%20I%27d%20like%20to%20order%20or%20reserve%21" 
+           target="_blank" class="mobile-cta">
+            💬 WhatsApp
+        </a>
+        <a href="https://www.google.com/maps/place/Bar-Ristorante-Pizzeria+Centrale+Lumino/" 
+           target="_blank" class="mobile-cta">
+            📍 Directions
+        </a>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 id="about-title" class="section-title">Why Centrale Lumino?</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="icon">🔥</div>
+                    <h3 id="about-pizza-title">Wood-Fired Pizza</h3>
+                    <p id="about-pizza-text">Neapolitan-style pizzas baked in our traditional wood oven. Crispy, authentic, unforgettable.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon">🌿</div>
+                    <h3 id="about-fresh-title">Fresh Ingredients</h3>
+                    <p id="about-fresh-text">Imported Italian products, local Swiss vegetables and the freshest seafood every day.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon">🇮🇹</div>
+                    <h3 id="about-experience-title">True Italian Experience</h3>
+                    <p id="about-experience-text">Casual trattoria atmosphere with a lively bar. Perfect for families, friends &amp; date nights.</p>
+                </div>
+            </div>
+            
+            <!-- Repeated CTA -->
+            <div class="cta-banner">
+                <h3 id="cta-banner-text">Hungry? Don’t wait – call or WhatsApp us now!</h3>
+                <div class="cta-banner-buttons">
+                    <a href="tel:+41918292294" class="cta-btn">📞 CALL NOW</a>
+                    <a href="https://wa.me/41918292294?text=Hi%2C%20I%27m%20ready%20to%20order%21" target="_blank" class="cta-btn whatsapp-btn">💬 WHATSAPP</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section id="menu" class="section menu-section">
+        <div class="container">
+            <h2 id="menu-title" class="section-title">Our Menu</h2>
+            <p id="menu-subtitle" class="section-subtitle">Classic Italian favorites made fresh daily • Prices in CHF / € equivalent</p>
+            
+            <div class="menu-categories">
+                <!-- Pizza -->
+                <div class="menu-category">
+                    <h3 class="category-header">🍕 PIZZA</h3>
+                    <div class="menu-grid">
+                        <div class="menu-card">
+                            <div class="menu-info">
+                                <h4>Margherita</h4>
+                                <p>Tomato sauce, mozzarella, fresh basil</p>
+                            </div>
+                            <div class="price">CHF 12</div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-info">
+                                <h4>Diavola</h4>
+                                <p>Spicy salami, tomato sauce, mozzarella</p>
+                            </div>
+                            <div class="price">CHF 14</div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-info">
+                                <h4>Quattro Formaggi</h4>
+                                <p>Gorgonzola, mozzarella, parmesan, fontina</p>
+                            </div>
+                            <div class="price">CHF 15</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pasta -->
+                <div class="menu-category">
+                    <h3 class="category-header">🍝 PASTA</h3>
+                    <div class="menu-grid">
+                        <div class="menu-card">
+                            <div class="menu-info">
+                                <h4>Carbonara</h4>
+                                <p>Classic Roman style with pancetta &amp; egg</p>
+                            </div>
+                            <div class="price">CHF 13</div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-info">
+                                <h4>Bolognese</h4>
+                                <p>Slow-cooked beef ragù</p>
+                            </div>
+                            <div class="price">CHF 14</div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-info">
+                                <h4>Seafood Pasta</h4>
+                                <p>Shrimp, mussels, calamari in light tomato sauce</p>
+                            </div>
+                            <div class="price">CHF 18</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Meat &amp; Specials -->
+                <div class="menu-category">
+                    <h3 class="category-header">🥩 MEAT &amp; SPECIALS</h3>
+                    <div class="menu-grid">
+                        <div class="menu-card">
+                            <div class="menu-info">
+                                <h4>Grilled Branzino</h4>
+                                <p>Whole sea bass with olive oil &amp; herbs</p>
+                            </div>
+                            <div class="price">CHF 24</div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-info">
+                                <h4>Osso Buco</h4>
+                                <p>Slow-braised veal shank</p>
+                            </div>
+                            <div class="price">CHF 26</div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-info">
+                                <h4>Tagliata di Manzo</h4>
+                                <p>Sliced beef with rocket &amp; parmesan</p>
+                            </div>
+                            <div class="price">CHF 22</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Menu CTA -->
+            <div class="text-center mt-8">
+                <a href="https://wa.me/41918292294?text=Hi%2C%20I%27d%20like%20the%20menu%20or%20to%20order%20takeaway%21" target="_blank" class="cta-btn large">
+                    💬 Order via WhatsApp
+                </a>
+                <p class="small-text">or call <a href="tel:+41918292294" style="color:#c8102e">+41 91 829 22 94</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <h2 id="gallery-title" class="section-title">Taste the Atmosphere</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox(0)">
+                    <img src="https://picsum.photos/id/292/800/600" alt="Wood-fired Margherita pizza" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(1)">
+                    <img src="https://picsum.photos/id/1015/800/600" alt="Seafood pasta" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(2)">
+                    <img src="https://picsum.photos/id/133/800/600" alt="Rustic dining room" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(3)">
+                    <img src="https://picsum.photos/id/201/800/600" alt="Outdoor seating" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(4)">
+                    <img src="https://picsum.photos/id/312/800/600" alt="Fresh ingredients" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(5)">
+                    <img src="https://picsum.photos/id/870/800/600" alt="Quattro Formaggi" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="section reviews-section">
+        <div class="container">
+            <h2 id="reviews-title" class="section-title">What Our Guests Say <span style="font-size:1rem; font-weight:400">(4.2 on Google • 49+ reviews)</span></h2>
+            
+            <div class="carousel" id="review-carousel">
+                <!-- Populated by JS -->
+            </div>
+            
+            <div class="carousel-dots" id="carousel-dots"></div>
+        </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section id="location" class="section location-section">
+        <div class="container">
+            <h2 id="location-title" class="section-title">Come Visit Us</h2>
+            <p id="location-address" class="address-text">Via Giovannaccio 11, 6533 Lumino, Switzerland</p>
+            
+            <div class="map-container">
+                <iframe 
+                    width="100%" 
+                    height="450" 
+                    style="border:0; border-radius: 16px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2752.8!2d9.0653522!3d46.2311257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4784494d84bf1b63%3A0x405f801ff95c63a5!5e0!3m2!1sen!2sch!4v1740000000000!5m2!1sen!2sch">
+                </iframe>
+            </div>
+            
+            <div class="location-cta">
+                <a href="https://www.google.com/maps/place/Bar-Ristorante-Pizzeria+Centrale+Lumino/" target="_blank" class="cta-btn">
+                    📍 Get Directions
+                </a>
+                <a href="tel:+41918292294" class="cta-btn">📞 Call for info</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT / FINAL CTA -->
+    <section class="section contact-section">
+        <div class="container">
+            <div class="final-cta-box">
+                <h2 id="final-cta-title">Ready to taste authentic Italy in Lumino?</h2>
+                <p id="final-cta-subtitle">Call, reserve or order via WhatsApp – we’re waiting for you!</p>
+                
+                <div class="final-ctas">
+                    <a href="tel:+41918292294" class="cta-btn huge-btn call-btn">📞 CALL +41 91 829 22 94</a>
+                    <button onclick="openReservationModal()" class="cta-btn huge-btn reserve-btn">📅 BOOK YOUR TABLE</button>
+                    <a href="https://wa.me/41918292294?text=Hi%20Centrale%20Lumino%2C%20I%27m%20coming%20today%21" target="_blank" class="cta-btn huge-btn whatsapp-btn">💬 WHATSAPP US</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <strong>Bar-Ristorante-Pizzeria Centrale Lumino</strong><br>
+                    Via Giovannaccio 11, 6533 Lumino, Switzerland
+                </div>
+                <div>
+                    <a href="tel:+41918292294">📞 +41 91 829 22 94</a><br>
+                    <a href="https://wa.me/41918292294" target="_blank">💬 WhatsApp</a>
+                </div>
+                <div>
+                    <strong>Opening hours</strong><br>
+                    Mon–Sat 09:00 – 23:00<br>
+                    Sunday closed
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2026 Centrale Lumino • All rights reserved • 
+                <a href="#" onclick="switchLanguage('it'); return false;">Versione Italiana</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- RESERVATION MODAL -->
+    <div id="reservation-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeReservationModal()">&times;</span>
+            <h2 id="modal-title">Reserve Your Table</h2>
+            <form id="reservation-form" onsubmit="handleReservation(event)">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Time</label>
+                        <input type="time" id="time" value="19:00" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Number of people</label>
+                    <select id="people" required>
+                        <option value="2">2 people</option>
+                        <option value="3">3 people</option>
+                        <option value="4" selected>4 people</option>
+                        <option value="5">5 people</option>
+                        <option value="6">6+ people</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Phone or WhatsApp</label>
+                    <input type="tel" id="phone" value="+41 91 829 22 94" required>
+                </div>
+                <button type="submit" class="cta-btn full-width">Confirm Reservation</button>
+                <p class="modal-note">We will confirm within minutes via call or WhatsApp</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox" onclick="if(event.target === this) closeLightbox()">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-image" src="" alt="">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
